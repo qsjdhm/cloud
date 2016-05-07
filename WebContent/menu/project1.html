@@ -1,0 +1,195 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="description" content="">
+	  	<meta name="keywords" content="">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	  	<title>Cloud Model - 项目管理</title>
+	
+	  	<meta name="renderer" content="webkit">
+	  	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	  	<meta name="mobile-web-app-capable" content="yes">
+	  	<meta name="apple-mobile-web-app-capable" content="yes">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  	<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+	  	<meta name="msapplication-TileImage" content="../common/ui/amaze-ui/assets/i/app-icon72x72@2x.png">
+	  	<meta name="msapplication-TileColor" content="#0e90d2">
+	  
+	  	<link rel="icon" type="image/png" href="../common/images/logo.png">
+	  	<link rel="icon" sizes="192x192" href="../common/images/logo.png">
+	  	<link rel="stylesheet" href="../common/ui/amaze-ui/assets/css/amazeui.css">
+	  	
+	  	
+	  	<link rel="stylesheet" href="css/project1.css">
+	</head>
+	<body>
+		
+		<!-- 左侧菜单 -->
+		<nav class="m-menu">
+			<div class="m-menu-header">
+				<span class="user-header am-animation-delay-1">
+					<img class=" am-thumbnail" src="images/user-header.jpg" alt="头像">
+				</span>
+				<div class="user-caption am-thumbnail-caption">
+					<p>XiaoFan-zh</p>
+					<p>超级管理员</p>
+				</div>
+			</div>
+			<nav class="m-menu-nav">
+				<div class="m-nav-item-active"></div>
+				<ul class="am-list admin-sidebar-list">
+					<li id="mProject" class="m-nav-item m-project">
+						<span class="m-icon am-icon-skyatlas am-icon-lg"></span>
+						<span>项目管理</span>
+					</li>
+					<li id="mFunction" class="m-nav-item m-function">
+						<span class="m-icon am-icon-connectdevelop am-icon-lg"></span>
+						<span>菜单功能</span>
+					</li>
+					<li id="mModel" class="m-nav-item m-model">
+						<span class="m-icon am-icon-unlink am-icon-lg"></span>
+						<span>页面建模</span>
+					</li>
+					<li id="mImage" class="m-nav-item m-image">
+						<span class="m-icon am-icon-folder-o am-icon-lg"></span>
+						<span>个人图库</span>
+					</li>
+				</ul>
+			</nav>
+		</nav>
+		
+		<!-- 右侧功能，包含顶部、功能页面、底部 -->
+		<div class="m-content">
+			<header class="m-bar">
+				<div class="m-logo am-topbar-brand">
+			    	<strong>Cloud Model</strong> 
+			    	<small>云端建模</small>
+				</div>
+				<nav class="m-config am-collapse am-topbar-collapse" >
+				    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+				    	<li>
+				    		<a href="javascript:;">
+					    		<span class="am-icon-envelope-o"></span> 收件箱 
+					    		<span class="am-badge am-badge-warning">5</span>
+				    		</a>
+				    	</li>
+				    	<li class="am-dropdown" data-am-dropdown>
+					        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+					        	<span class="am-icon-users"></span> 管理员 
+					        	<span class="am-icon-caret-down"></span>
+					        </a>
+					        <ul class="am-dropdown-content">
+					          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
+					          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+					          <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+					        </ul>
+				      	</li>
+				      	<li class="am-hide-sm-only">
+					      	<a href="javascript:;" id="admin-fullscreen">
+						      	<span class="am-icon-arrows-alt"></span> 
+						      	<span class="admin-fullText">开启全屏</span>
+					      	</a>
+				      	</li>
+				    </ul>
+  				</nav>
+			</header>
+			<div class="m-page">
+				<div class="m-page-title">
+					我创建的项目(8)
+				</div>
+				
+				<div id="projectList" class="m-project-list">
+					<!-- 新增 -->
+					<div data-am-scrollspy="{animation: 'slide-bottom', delay: 100, repeat: false}" id="newProject" class="m-project-item">
+						<div class="m-project-new-item">
+							<span class="m-project-tip">点击创建项目</span>
+						</div>
+						<div class="m-project-item-desc">
+							<span class="am-icon-lock"></span>
+							创建新项目
+						</div>
+					</div>
+				
+					<div data-am-scrollspy="{animation: 'slide-bottom', delay: 200, repeat: false}" class="m-project-item">
+						<div class="m-project-item-img">
+							<img class="am-thumbnail" alt="项目" src="images/scenery-6.png">
+							<span class="m-project-tip">打开此项目</span>
+						</div>
+						<div class="m-project-item-desc">
+							<span class="am-icon-lock"></span>
+							52doit/个人网站
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<footer class="m-footer">
+				<div class="pull-right">
+					© 2014-2015
+					<a target="_blank" href="/">云端建模</a>
+				</div>
+			</footer>
+		</div>
+		
+		
+		<!-- 新增项目弹出框 -->
+		<div class="am-modal am-modal-confirm" tabindex="-1" id="newProjectPop">
+			<div class="am-modal-dialog">
+			    <div class="am-modal-hd">填写项目信息</div>
+			    <div class="am-modal-bd">
+			    	<span class="input input--minoru m-info-item">
+			    		<span>名称 :</span>
+						<input class="input__field input__field--yoko" type="text" id="projectName" />
+						<label class="input__label input__label--yoko" for="projectName"></label>
+			    	</span>
+			    	<span class="input input--minoru m-info-item">
+			    		<span>描述 :</span>
+						<input class="input__field input__field--yoko" type="text" id="projectDesc" />
+						<label class="input__label input__label--yoko" for="projectDesc"></label>
+			    	</span>
+			    </div>
+			    <div class="am-modal-footer">
+			    	<span class="m-btn-cancel am-modal-btn" data-am-modal-cancel>取消</span>
+			    	<span class="m-btn-confirm am-modal-btn" data-am-modal-confirm>修改</span>
+			    </div>
+			</div>
+		</div>
+		
+		<!-- 页面建模弹出框 -->
+		<div class="am-modal am-modal-confirm" tabindex="-1" id="pageModelPop">
+			<div class="am-modal-dialog">
+			    <div class="am-modal-hd">页面建模信息</div>
+			    <div class="am-modal-bd">
+			    	<span id="projectTable" class="select m-info-item">
+			    		<span>项目 :</span>
+			    		<select data-am-selected>
+						    <option value="52">52doIT</option>
+						    <option value="52">52doIT</option>
+						    <option value="52">52doIT</option>
+						    <option value="52">52doIT</option>
+						</select>
+			    	</span>
+			    	<span id="menuTable" class="select m-info-item">
+			    		<span>菜单 :</span>
+			    	</span>
+			    </div>
+			    <div class="am-modal-footer">
+			    	<span class="m-btn-cancel am-modal-btn" data-am-modal-cancel>新建模型</span>
+			    	<span class="m-btn-confirm am-modal-btn" data-am-modal-confirm>修改模型</span>
+			    </div>
+			</div>
+		</div>
+		
+	
+		<script src="../common/ui/amaze-ui/assets/js/jquery.min.js"></script>
+		<script src="../common/js/jquery.json-2.4.js"></script>
+		<!-- 弹出框内input样式插件 -->
+		<script src="../plugs/input/js/classie.js"></script>
+		<script src="js/project.js"></script>
+		
+		<!-- 放到project.js后引用是因为amazeui会现根据html的标签再初始化效果 -->
+		<script src="../common/ui/amaze-ui/assets/js/amazeui.min.js"></script>
+	</body>
+</html>

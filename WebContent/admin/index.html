@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html> 
+<head>
+	<meta charset="utf-8" />
+	<title>Cloud Model - 后台管理系统</title> 
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link rel="icon" type="image/png" href="../common/images/logo.png">
+	  	<link rel="icon" sizes="192x192" href="../common/images/logo.png">
+	<link href="media/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="../plugs/tip/toastr.css" rel="stylesheet" type="text/css"/>
+
+	<link rel="stylesheet" href="css/element.css" type="text/css" /><!-- 后台管理公共样式 -->
+	
+</head>
+<body class="page-header-fixed">
+	<div class="header navbar navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand" href="home">
+					<img src="media/image/logo.png" alt="logo"/>
+				</a>
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+					<img src="media/image/menu-toggler.png" alt="" />
+				</a>          
+				<ul class="nav pull-right">
+					<li class="dropdown user">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img alt="" src="media/image/avatar1_small.jpg" />
+							<span class="username">文艺青年流川枫</span>
+							<i class="icon-angle-down"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="page-container">
+		<div class="page-sidebar nav-collapse collapse">
+			<ul class="page-sidebar-menu">
+				<li>
+					<div class="sidebar-toggler hidden-phone"></div>
+				</li>
+				<li class="start">
+					<a href="home">
+						<i class="icon-home"></i> 
+						<span class="title">欢迎回来</span>
+						<span class="selected"></span>
+					</a>
+				</li>
+			</ul> 
+		</div>
+		<div class="page-content">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<h3 class="page-title"></h3>
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home"></i>
+								<a id="home" href="/cloud/menu/project.html">Cloud Model</a> 
+								<i class="icon-angle-right"></i>
+							</li>
+							<li><a id="menuTip" href=""> </a></li>
+							<li class="pull-right no-text-shadow">
+								<div id="dashboard-report-range" class="dashboard-date-range tooltips no-tooltip-on-touch-device responsive" data-tablet="" data-desktop="tooltips" data-placement="top" data-original-title="Change dashboard date range">
+									<i class="icon-calendar"></i>
+									<span></span>
+									<i class="icon-angle-down"></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="dashboard">
+					<div id="plugArea" style="height: 600px;" class="row-fluid">
+						
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-inner">
+			<span>
+				technology stays true here ©2015 
+				<a style="color:#999;" href="http://www.52doit.com">
+					www.52doit.com 
+				</a>
+				<a style="color:#999;" href="http://www.miitbeian.gov.cn/" target="_blank">
+					鲁ICP备15007960号-2
+				</a>
+			</span>
+		</div>
+		<div class="footer-tools">
+			<span class="go-top">
+				<i class="icon-angle-up"></i>
+			</span>
+		</div>
+	</div>
+	
+	
+	<script src="media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<script src="media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+	<script src="media/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="media/js/app.js" type="text/javascript"></script>
+	<script src="media/js/index.js" type="text/javascript"></script>  
+	<script src="../plugs/tip/toastr.js" type="text/javascript"></script><!-- 提示 -->
+	<script src="../plugs/tip/glimpse.min.js" type="text/javascript"></script>
+	<script src="../plugs/tip/glimpse.toastr.js" type="text/javascript"></script>
+   	
+	<script src="../common/js/jquery.json-2.4.js" type="text/javascript"></script>
+	<script src="../common/js/require.min.js" type="text/javascript"></script>
+	
+	<script src="js/menu.js" type="text/javascript"></script>  
+	<script src="js/page.js" type="text/javascript"></script>  
+	<script src="js/index.js" type="text/javascript"></script>
+	<script>
+		jQuery(document).ready(function() { 
+		    App.init();
+		    Index.init();
+		});
+	</script>
+
+</html>

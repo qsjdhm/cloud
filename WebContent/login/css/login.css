@@ -1,0 +1,199 @@
+@charset "utf-8";
+/*login CSS Document */
+html {
+	min-width: 960px;
+	min-height: 620px;
+	height: 100%;
+	background: #f0f0f0 url(../images/login/bodyBg.png) no-repeat center top;
+}
+body {
+	min-width: 960px;
+	min-height: 620px;
+	height: 100%;
+	background: url(../images/login/rightBg.png) no-repeat right bottom;
+}
+.logo{
+	position: absolute;
+	left: 104px;
+	top: 45px;
+	width: 350px;
+	height: 64px;
+}
+.logo .logo-img{
+	float: left;
+	margin-right: 20px;
+}
+.logo .logo-img img{
+	width: 62px;
+}
+.logo .logo-tip-1{
+	color: #787670;
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+.logo .logo-tip-2{
+	color: #61615D;
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 960px) {
+	.login-page {
+		min-height: 620px;
+		background: url(../images/login/bodyBg.png) no-repeat center top;
+	}
+	.login-content {
+		min-height: 620px;
+		background: url(../images/login/rightBg.png) no-repeat right bottom;
+	}
+	.login-Logo {
+		width: 330px;
+		height: 54px;
+		background: url(../images/login/login_Logo.png) no-repeat left top;
+		text-indent: -9999px;
+		position: absolute;
+		left: 40px;
+		top: 46px;
+	}
+}
+.login-page {
+	width: 100%;
+	position: relative;
+}
+.login-content {
+	width: 960px;
+	min-width: 960px;
+	height: 527px;
+	margin: 0 auto;
+	position: relative
+}
+.login-content .login-form {
+	width: 353px;
+	height: 387px;
+	background: none;
+	position: absolute;
+	right: 0;
+	top: 114px;
+}
+.login-content .login-form h2 {
+	height: 90px;
+	line-height: 90px;
+	color: #999;
+	font-size: 22px;
+	padding: 0 0 0 52px;
+	font-weight: normal;
+	background: url(../images/login/login_userBg.png) no-repeat left center;
+}
+.login-content .login-form .input {
+	width: 296px;
+	height: 44px;
+	border: 1px solid #ccc;
+	text-indent: 10px;
+	margin: 0 0 25px 0;
+	outline: none;
+	transition: all 0.30s ease-in-out;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+}
+.login-content .login-form .input:hover, .login-content .login-form .input:focus {
+	border: 1px solid #56a4f6;
+}
+.login-content .login-form .username {
+	background: #fff url(../images/login/username.png) no-repeat right 11px center;
+}
+.login-content .login-form .password {
+	background: #fff url(../images/login/password.png) no-repeat right 11px center;
+}
+/*******自定义复选框样式*******/
+.login-content .login-form .more-oper {
+	height: 73px;
+	padding: 0;
+}
+.login-content .login-form .more-oper label {
+	float: left;
+}
+.login-content .login-form .more-oper a {
+	float: left;
+	display: block;
+	font-size: 13px;
+	color: #999;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 0 0 10px;
+}
+.login-content .login-form .more-oper .a-red {
+	color: #ef5659;
+}
+.login-content .login-form .more-oper .a-forget-psw {
+	cursor: pointer;
+}
+.login-content .login-form .more-oper .a-forget-psw:hover {
+	color: #50b5f2;
+	text-decoration: underline;
+}
+.auto-login {
+	display: none;
+}
+input[type=checkbox] {
+	visibility: hidden;
+}
+.auto-login + label {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	height: 12px;
+	line-height: 12px;
+	width: 12px;
+	border-radius: 3px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	cursor: pointer;
+}
+.auto-login:checked + label {
+	border: 1px solid #56a4f6;
+}
+.auto-login:checked + label:after {
+	content: url(../images/login/checked.png);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+.login-form .login-btn {
+	display: block;
+	width: 300px;
+	height: 46px;
+	line-height: 46px;
+	background: #fabc3d;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #d83737;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+}
+.login-form .login-btn:hover {
+	background: #f04806;
+	color: #fff;
+}
+.copyright {
+	margin: 52px 0 0 0;
+}
+.copyright a {
+	display: block;
+	padding: 4px 0 4px 0;
+	height: 14px;
+	line-height: 14px;
+	font-size: 13px;
+	color: #999;
+}
+.copyright a span {
+	padding: 0 10px 0 0;
+	font-size: 13px;
+	color: #999;
+}

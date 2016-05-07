@@ -1,0 +1,120 @@
+@CHARSET "UTF-8"; 
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.table{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+}
+
+.table table{
+	width: 100%;
+	border-collapse: collapse; 
+	border: none; 
+}
+
+/* 表头 */
+.table .ths{
+	font-weight: bold;
+    line-height: 30px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.table .ths table{
+	height: 30px; 
+}
+
+.table .th{
+	width: 31%;
+	height: 100%;
+	text-align: center;
+	padding: 0;
+	float: left;
+} 
+
+.table .ths .th-all{
+	position: relative;
+    top: 5px;
+    width: 10%;
+}
+
+.table .ths .th-num{
+	width: 8%;
+}
+
+.table .ths .th-edit, .table .ths .th-del{
+	width: 10%;
+}
+
+/* 数据 */
+.table .cons{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	right: 0px;
+	bottom: 30px;
+	overflow: auto;
+}
+
+.table .cons .tr{
+	border-top: 1px solid #DDDDDD;  
+}
+
+.table .cons .td{
+	width: 31%;
+	height: 100%; 
+	text-align: center;
+	padding: 0;
+}
+
+.table .cons .td>div{
+	width: 100%;
+	height: 30px;
+    line-height: 30px;
+}
+
+.table .cons .td-all>div{ 
+	padding-top: 5px;
+}
+
+.table .cons .td-all{
+	width: 10%;
+}
+
+.table .cons .td-num{
+	width: 8%; 
+}
+
+.table .cons .td-edit, .table .cons .td-del{
+	width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 分页 */
+
+
+
+
+
+
+
+
+

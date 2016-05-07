@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="description" content="">
+	  	<meta name="keywords" content="">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	  	<title>Cloud Model - 图库管理</title>
+
+	  	<meta name="renderer" content="webkit">
+	  	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	  	<meta name="mobile-web-app-capable" content="yes">
+	  	<meta name="apple-mobile-web-app-capable" content="yes">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  	<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+	  	<meta name="msapplication-TileImage" content="../common/ui/amaze-ui/assets/i/app-icon72x72@2x.png">
+	  	<meta name="msapplication-TileColor" content="#0e90d2">
+
+	  	<link rel="icon" type="image/png" href="../common/images/logo.png">
+	  	<link rel="icon" sizes="192x192" href="../common/images/logo.png">
+		<link rel="stylesheet" href="../common/ui/amaze-ui/assets/css/amazeui.css">
+	  	<link rel="stylesheet" href="../plugs/tip/toastr.css">
+
+	  	<link rel="stylesheet" href="css/warehouse.css">
+
+
+	</head>
+	<body>
+
+		<!-- 左侧菜单 -->
+		<div class="m-menu">
+			<div class="m-menu-header">
+				<span class="user-header am-animation-delay-1">
+					<img class=" am-thumbnail" src="images/user-header.jpg" alt="头像">
+				</span>
+				<div class="user-caption am-thumbnail-caption">
+					<p>XiaoFan-zh</p>
+					<p>超级管理员</p>
+				</div>
+			</div>
+			<div class="m-menu-nav">
+				<div class="m-nav-item-active"></div>
+				<ul class="am-list admin-sidebar-list">
+					<li id="mProject" class="m-nav-item m-project">
+						<span class="m-icon am-icon-skyatlas am-icon-lg"></span>
+						<span>项目管理</span>
+					</li>
+					<li id="mFunction" class="m-nav-item m-function">
+						<span class="m-icon am-icon-connectdevelop am-icon-lg"></span>
+						<span>菜单功能</span>
+					</li>
+					<li id="mModel" class="m-nav-item m-model">
+						<span class="m-icon am-icon-unlink am-icon-lg"></span>
+						<span>页面建模</span>
+					</li>
+					<li id="mImage" class="m-nav-item m-image">
+						<span class="m-icon am-icon-folder-o am-icon-lg"></span>
+						<span>个人图库</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 右侧功能，包含顶部、功能页面、底部 -->
+		<div class="m-content">
+			<div class="m-bar">
+				<div class="m-logo am-topbar-brand">
+			    	<strong>Cloud Model</strong>
+			    	<small>云端建模</small>
+			    	<small style="margin-left:20px;">小提示 : 在此页面可以统一管理您所需要的图片等</small>
+				</div>
+				<div class="m-config am-collapse am-topbar-collapse" >
+				    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+				    	<li>
+				    		<a href="javascript:;">
+					    		<span class="am-icon-envelope-o"></span> 收件箱
+					    		<span class="am-badge am-badge-warning">5</span>
+				    		</a>
+				    	</li>
+				    	<li class="am-dropdown" data-am-dropdown>
+					        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+					        	<span class="am-icon-users"></span> 管理员
+					        	<span class="am-icon-caret-down"></span>
+					        </a>
+					        <ul class="am-dropdown-content">
+					          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
+					          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+					          <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+					        </ul>
+				      	</li>
+				      	<li class="am-hide-sm-only">
+					      	<a href="javascript:;" id="admin-fullscreen">
+						      	<span class="am-icon-arrows-alt"></span>
+						      	<span class="admin-fullText">开启全屏</span>
+					      	</a>
+				      	</li>
+				    </ul>
+  				</div>
+			</div>
+			<div class="m-page">
+
+			</div>
+			<div class="m-footer">
+				<div class="pull-right">
+					© 2014-2015
+					<a target="_blank" href="/">云端建模</a>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="../common/ui/amaze-ui/assets/js/jquery.min.js"></script>
+		<script src="../common/js/jquery.json-2.4.js"></script>
+
+		<script src="js/warehouse.js"></script>
+
+		<!-- warehouse.js后引用是因为amazeui会现根据html的标签再初始化效果 -->
+		<script src="../common/ui/amaze-ui/assets/js/amazeui.min.js"></script>
+		<script src="../common/js/require.min.js"></script>
+	</body>
+</html>

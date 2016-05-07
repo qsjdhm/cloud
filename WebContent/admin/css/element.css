@@ -1,0 +1,172 @@
+/* 建模平台的各种元素样式 */
+
+@CHARSET "UTF-8"; 
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.ele-label, 
+.ele-input, 
+.ele-button,
+.ele-select,
+.ele-tree,
+.ele-table,
+.ele-rich{
+	font-family: 微软雅黑;
+	background-color: #FFFFFF;
+	border: 1px solid #DFDFDF;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.ele-tags{
+	width: 100%;
+	position: absolute;
+}
+
+.ele-tree{
+	overflow: auto;
+}
+
+
+/* 各种元素的样式 */
+.ele-label{
+	font-size: 16px;
+	color: #333;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 35px;
+	padding: 0px 5px;
+	margin: 0px;
+	border: 0px;
+}
+
+.ele-input{
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 35px;
+    padding: 5px 10px 5px 10px;
+	margin: 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C3C3C3;
+	background-color: #FFFFFF;
+	
+    border-radius: 0;
+    display: block;
+    transition: border-color 300ms ease 0s, color 300ms ease 0s;
+    width: 100%;
+}
+
+.ele-input:hover{
+	border-color: #666;
+}
+
+.ele-input:focus{
+	border-color: #000;
+}
+
+.ele-button{
+	font-size: 17px;
+	color: #FFF;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 45px;
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
+	border-style: solid;
+	border-color: #FFF;
+	background-color: #92CAF9;
+	
+    display: inline-block;
+    transition: all 300ms ease 0s;
+}
+
+.ele-button:hover{
+	border-color: #FFF;
+	background-color: #83BBEA;
+}
+
+.ele-button:active{
+	background-color: #629AC9;
+}
+
+.ele-select .cd-dropdown span{
+	font-size: 16px;
+	color: #8B8B8B;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 0 50px 0 30px;
+}
+
+.ele-select .cd-dropdown > span{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C3C3C3;
+	transition: all 300ms ease 0s;
+}
+
+.ele-select .cd-dropdown > span:hover{
+	border-color: #8B8B8B;
+}
+
+.ele-tree a span{
+	font-size: 15px;
+	color: #333;
+	letter-spacing: 1px;
+}
+
+.ele-tags .select2-search-choice>div{
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 1px;
+}
+
+.ele-tags .select2-choices{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C3C3C3;
+	transition: all 300ms ease 0s;
+}
+
+.ele-tags .select2-choices:hover{
+	border-color: #B7B7B7;
+}
+
+.ele-tags .select2-choices .select2-search-choice{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C3C3C3;
+	transition: all 300ms ease 0s;
+}
+
+.ele-tags .select2-choices .select2-search-choice:hover{
+	border-color: #B7B7B7;
+}
+
+
+
+
+/* tree的添加按钮样式 */
+.ztree li span.button.add {
+	margin-left:2px; 
+	margin-right: -1px; 
+	background-position:-144px 0; 
+	vertical-align:top; 
+	*vertical-align:middle;
+}
+
+
+
+
+
+
+
+

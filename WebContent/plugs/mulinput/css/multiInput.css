@@ -1,0 +1,45 @@
+
+.multi-input{
+    min-height: 32px;
+    width: 205px;
+    margin-left: 102px;
+}
+
+.multi-input .input-option{
+	width: 205px;
+	margin-bottom: 10px;
+}
+
+.multi-input .input-option input{
+	height: 30px!important;
+	width: 152px!important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.multi-input .input-option input{
+		width: 151px!important;
+	}
+}
+
+.multi-input .input-option i{
+	font-size: 17px;
+	color: #D4D4D4;
+	transition: all 0.3s ease 0s;
+}
+
+.multi-input .input-option i:hover{
+	cursor:pointer;
+	color: #9B9B9B;
+}
+
+
+
+
+
+
+
+
+
+
+
+

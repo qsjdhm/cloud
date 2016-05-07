@@ -1,0 +1,50 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input {
+	border: 0 none;
+	margin: 0;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0pt;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0pt;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+strong, b {
+	font-weight: bold;
+}
+em, i {
+	font-style: italic;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style-type: none;
+	display: block
+}
+a {
+	text-decoration: none
+}
+a:link, a:visited, a:hover, a:active {
+	blr:expression(this.onFocus=this.blur())
+}
+img {
+	border: none;
+}
+.clear {
+	clear: both;
+}

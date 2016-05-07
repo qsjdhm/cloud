@@ -1,0 +1,38 @@
+@CHARSET "UTF-8"; 
+
+body{
+    line-height:1.4;  
+    color:#333;
+    /* font-family: "Lato",sans-serif !important; */
+    font-family: 微软雅黑 !important;
+    font-size: 12px;
+    background: none repeat scroll 0 0 #92CAF9;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+input,textarea,select{
+    font-size:12px;
+    font-size:100%;
+    font-family:arial;
+    font-family:inherit;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+    margin:0;
+}
+h4,h5,h6{
+    font-size:1em;
+}
+ul,ol{
+    padding-left:0; 
+    list-style-type:none;
+}
+/*image with no-border*/
+a{
+	text-decoration:none;
+}
+a img{
+	border:0;
+}
+img{
+	border:0;
+}

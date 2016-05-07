@@ -1,0 +1,26 @@
+@CHARSET "UTF-8"; 
+
+/* 拖动元素对齐的样式 */
+.al-top, .al-bottom{
+	height: 1px;
+	border-top: 1px dashed #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9;
+}
+
+.al-left, .al-right{
+	width: 1px;
+	border-left: 1px dashed #999999;
+    position: absolute;
+    top: 40px;  /* 这里要去掉page title的高度 */
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 9;
+}
+
+

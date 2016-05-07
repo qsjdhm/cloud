@@ -1,0 +1,117 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.multi-select{
+	border: 1px solid #C8C8C8;
+    float: left;
+    height: 32px;
+    width: 185px;
+}
+
+.select-picker{
+	height: 30px;
+	line-height: 30px;
+}
+
+.select-picker:hover{
+	cursor: pointer;
+}
+
+.select-picker .select-data{
+	color: #666666;
+	font-size: 2.2em;
+    font-weight: 300;
+	float: left;
+    height: 30px;
+    width: 168px;
+    margin: 0;
+    padding: 0 5px;
+    
+    white-space: nowrap;
+    overflow: hidden;            
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.select-picker .down-img{
+	background: url("../images/skin_icons.png") no-repeat scroll -49px -160px #F2F2F2;
+    border-left: 1px solid #C8C8C8;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 30px;
+    margin: 0;
+    width: 30px;
+}
+
+.down-hover{
+	background: url("../images/skin_icons.png") no-repeat scroll -49px -160px #E6E6E6!important;
+}
+
+.option-ul{
+	font-size: 15px;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFDFDF;
+    display: none;
+    height: 100px;
+    left: -1px;
+    margin: 0;
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 2px;
+    position: relative;
+    top: -8px;
+    width: 205px;
+    z-index: 1;
+}
+
+.option-li{
+	height: 30px;
+    line-height: 30px;
+    list-style: none outside none;
+    padding: 2px 30px 2px 18px;
+}
+
+.option-li:hover{
+	cursor: pointer;
+	background: #FF824D;
+	color: #fff;
+}
+
+.option-li p{
+	color: #666666;
+	height: 30px;
+    width: 120px;
+    margin: 0px!important;
+    float: left;
+    
+    white-space: nowrap;
+    overflow: hidden;            
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+ 
+.option-li i{
+	float: right;
+    margin-top: 5px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

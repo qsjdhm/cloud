@@ -1,0 +1,48 @@
+
+.complex-input{
+    min-height: 32px;
+    width: 80px;
+    margin-left: 102px;
+}
+
+.complex-input .input-option{
+	width: 215px;
+	margin-bottom: 10px;
+}
+
+.complex-input .input-option input{
+	height: 30px!important;
+	width: 55px!important;
+}
+
+.complex-input .input-option span{
+	color: #9B9B9B;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 33px;
+    letter-spacing: 0;
+    line-height: 33px;
+}
+
+.complex-input .input-option i{
+	font-size: 17px;
+	color: #D4D4D4;
+	transition: all 0.3s ease 0s;
+}
+
+.complex-input .input-option i:hover{
+	cursor:pointer;
+	color: #9B9B9B;
+}
+
+
+
+
+
+
+
+
+
+
+
+

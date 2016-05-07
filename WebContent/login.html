@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Cloud Model 云端建模平台 </title>
+	  	<link rel="icon" type="image/png" href="common/images/logo.png">
+	  	<link rel="icon" sizes="192x192" href="common/images/logo.png">
+		<link rel="stylesheet" href="login/css/global.css" type="text/css">
+		<link rel="stylesheet" href="login/css/login.css" type="text/css">
+		<link rel="stylesheet" href="plugs/tip/toastr.css">
+	</head>
+	<body>
+		<div id="login-page">
+			<div class="logo">
+				<div class="logo-img">
+					<img src="common/images/logo.png"></img>
+				</div>
+				<div>
+					<div>
+						<span class="logo-tip-1">Cloud Model</span>
+					</div>
+					<div>
+						<span class="logo-tip-2">云端模型搭建平台</span>
+					</div>
+				</div>
+			</div>
+		  	<div class="login-content">
+			    <form name="loginForm" method="post" action="LoginAction" onsubmit="return checkUser();">
+				    <div id="loginForm" class="login-form">
+					    <h2>欢迎登录账户</h2>
+					    <input type="text" name="name" id="userName" class="input username" placeholder="账号"/>
+					    <input type="password" name="pass" id="password" class="input password" placeholder="密码"/>
+					    <div class="more-oper">
+						    <input type="checkbox" id="autoLogin" class="auto-login" />
+						    <label for="auto-login"></label>
+						    <a>下次自动登录</a>
+						    <a class="a-red">丨</a>
+						    <a id="register" class="a-red a-forget-psw">免费注册</a>
+						    <a class="a-red">丨</a>
+						    <a id="find" class="a-red a-forget-psw">忘记密码 ?</a>
+					    </div>
+					    <input type="submit" value="登录" class="login-btn"/>
+					    <!--<a id="login" class="login-btn">登录</a>-->
+					    <div class="copyright">
+						    <a>
+							    <span>Cloud Model</span>
+							    <span>版权所有</span>
+						    </a>
+						    <a>
+							    <span>Copyright © 2014-2015</span>
+							    <span>www.cmodel.com</span>
+						    </a>
+						    <a>
+							    <span>All Rights Reserved</span>
+						    </a>
+					    </div>
+				    </div>
+
+
+			    </form>
+
+			    
+			    
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="/cloud/common/js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="/cloud/plugs/tip/toastr.js"></script><!-- 提示 -->
+		<script type="text/javascript" src="/cloud/plugs/tip/glimpse.min.js"></script>
+		<script type="text/javascript" src="/cloud/plugs/tip/glimpse.toastr.js"></script>
+		
+		<script type="text/javascript" src="/cloud/login/js/login.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+

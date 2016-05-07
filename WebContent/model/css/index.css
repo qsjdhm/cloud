@@ -1,0 +1,82 @@
+@CHARSET "UTF-8"; 
+
+.header{
+	height: 50px;
+	border-bottom: 0px solid #dfdfdf;
+	background: none repeat scroll 0 0 #235FBA;
+	/* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+	padding: 0 10px 0 10px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.content{
+	border: 0px solid #dfdfdf;
+	margin-top: 0px;
+	position: absolute;
+	top: 50px;
+	/* bottom: 30px; */
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow-x: hidden;
+}
+
+.footer{
+	/* height: 30px; */
+	height: 0px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	border-top: 1px solid #dfdfdf;
+}
+
+.section-content{
+	/* background:url("../images/modelbg.jpg");
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); */
+	overflow-x: hidden;
+	/* overflow-y: auto; */
+	overflow-y: hidden;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 10px;
+    right: 80px;
+    transition: all 0.2s ease-in 0s;
+}
+
+/* 在左侧显示 */
+.l-se{
+	left: 0px;
+	/* right: 80px; */
+	right: 0px;
+}
+
+/* 在右侧显示 */
+.r-se{
+	/* left: 80px;
+	right: 10px; */
+	left: 0px;
+	right: 0px;
+}
+
+.ele-list .fa-lg, .thum-widget .fa-lg{
+	color: #787878;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

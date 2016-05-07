@@ -1,0 +1,61 @@
+@CHARSET "UTF-8"; 
+
+/* 页面元素配置样式 */
+
+.header .page-logo{
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+}
+
+.header .page-logo strong{
+	font-size: 21px;
+	height: 55px;
+	line-height: 55px;
+}
+
+.header .page-logo small{
+	font-size: 16px;
+}
+
+.header .page-logo small:last-child {
+    font-size: 15px;
+}
+
+.header .page-toolbar{
+	position: absolute;
+	height: 40px;
+	line-height: 40px;
+	top: 0px;
+	right: 0px;
+}
+
+.header .page-save, .header .page-preview{
+	height: 35px;
+	line-height: 35px;
+	color: #333;
+	width: 90px;
+	background-color: #F6F6F6;
+    border: 0px;
+    font-size: 14px;
+    margin: 8px 10px;    
+    text-align: center;
+    padding: 0px;
+    transition: all 300ms ease 0s;
+}
+
+.header .page-preview{
+	display: none;
+}
+
+.header .page-save:hover, .header .page-preview:hover{
+	background-color: #E5F0F9;
+}
+
+.header .page-save:active, .header .page-preview:active{
+	background-color: #92CAF9;
+}
+
+
+
+
